@@ -32,6 +32,23 @@ public class HotelTest {
         assertEquals(1, conferenceRoom1.getTotalGuests());
     }
 
+    @Test
+    public void canRemoveGuestFromBedroom() {
+        hotel.addGuestToBedroom(guest1, bedroom1);
+        hotel.removeGuestFromBedroom(guest1, bedroom1);
+        assertEquals(0, bedroom1.getTotalGuests());
+    }
+
+    @Test
+    public void canRemoveGuestFromConferenceRoom(){
+        hotel.addGuestToConferenceRoom(guest2, conferenceRoom1);
+        hotel.removeGuestFromConferenceRoom(guest2, conferenceRoom1);
+        assertEquals(0, conferenceRoom1.getTotalGuests());
+    }
 
 
 }
+
+
+
+

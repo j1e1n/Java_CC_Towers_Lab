@@ -23,6 +23,13 @@ public class BedroomTest {
     @Test
     public void canAddGuest(){
         bedroom.addGuest(guest1);
+        assertEquals(1, bedroom.getTotalGuests());
     }
 
+    @Test
+    public void canRemoveGuest() {
+        bedroom.addGuest(guest1);
+        bedroom.removeGuest(guest1);
+        assertEquals(0, bedroom.getTotalGuests());
+    }
 }

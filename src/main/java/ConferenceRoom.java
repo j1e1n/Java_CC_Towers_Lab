@@ -28,4 +28,7 @@ public class ConferenceRoom {
     public int getTotalGuests() {
        return this.guestList.size();
     }
-}
+
+    public void removeGuest(Guest guest) { this.guestList.remove(guest); }
+    }
+

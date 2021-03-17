@@ -12,4 +12,10 @@ public class Hotel {
     }
 
 
+    public void removeGuestFromBedroom(Guest guest, Bedroom bedroom) { bedroom.removeGuest(guest); }
+
+    public void addGuestToConferenceRoom(Guest guest, ConferenceRoom conferenceRoom) { conferenceRoom.addGuest(guest); }
+
+    public void removeGuestFromConferenceRoom(Guest guest, ConferenceRoom conferenceRoom) { conferenceRoom.removeGuest(guest);
+    }
 }
