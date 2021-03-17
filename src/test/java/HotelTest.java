@@ -49,6 +49,7 @@ public class HotelTest {
     @Test
     public void canCreateBooking(){
         Booking booking = hotel.bookRoom(bedroom1, 3);
+        assertEquals(225, booking.calculateTotalBill());
     }
 
 
