@@ -14,7 +14,7 @@ public class HotelTest {
     @Before
     public void before(){
         hotel = new Hotel();
-        bedroom1 = new Bedroom(1234, 3, "Double");
+        bedroom1 = new Bedroom(1234, 3, "Double", 75);
         conferenceRoom1 = new ConferenceRoom(20, " C Room 1");
         guest1 = new Guest("Bob");
         guest2 = new Guest("Melinda");
@@ -44,6 +44,11 @@ public class HotelTest {
         hotel.addGuestToConferenceRoom(guest2, conferenceRoom1);
         hotel.removeGuestFromConferenceRoom(guest2, conferenceRoom1);
         assertEquals(0, conferenceRoom1.getTotalGuests());
+    }
+
+    @Test
+    public void canCreateBooking(){
+        Booking booking = hotel.bookRoom(bedroom1, 3);
     }
 
 
