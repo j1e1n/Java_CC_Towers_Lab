@@ -9,4 +9,8 @@ public class DiningRoom {
         this.name = name;
         this.guests = new ArrayList<Guest>();
     }
+
+    public String getName() {
+        return name;
+    }
 }
