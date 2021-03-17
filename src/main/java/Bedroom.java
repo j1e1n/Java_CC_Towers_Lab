@@ -25,4 +25,14 @@ public class Bedroom {
     public String getRoomType() {
         return roomType;
     }
+
+
+
+    public int getTotalGuests() {
+       return this.guestList.size();
+    }
+
+    public void addGuest(Guest guest) {
+        this.guestList.add(guest);
+    }
 }

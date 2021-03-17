@@ -19,4 +19,13 @@ public class ConferenceRoom {
     public String getName() {
         return name;
     }
+
+
+    public void addGuest(Guest guest) {
+        this.guestList.add(guest);
+    }
+
+    public int getTotalGuests() {
+       return this.guestList.size();
+    }
 }
